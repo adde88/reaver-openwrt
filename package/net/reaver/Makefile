@@ -8,8 +8,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=reaver-wps-fork-t6x
-PKG_REV:=HEAD
-PKG_VERSION:=1.6.1
+PKG_REV:=0bec6e81905c899b2e985248215391a6d5200ac5
+PKG_VERSION:=1.6.3
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
@@ -52,8 +52,6 @@ define Package/reaver/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/{reaver,wash} $(1)/usr/bin/
 	$(INSTALL_DIR) $(1)/etc/reaver
-#	$(INSTALL_DATA) $(PKG_BUILD_DIR)/src/reaver.db $(1)/etc/reaver/
 endef
 
-$(eval $(call BuildPackage,reaver)) 
-
+$(eval $(call BuildPackage,reaver))
