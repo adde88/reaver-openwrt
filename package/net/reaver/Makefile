@@ -8,9 +8,9 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=reaver-wps-fork-t6x
-PKG_REV:=0bec6e81905c899b2e985248215391a6d5200ac5
+PKG_REV:=1fbdf8d76ee4e5fe2c39e1a3eb2f3b46b1de968b
 PKG_VERSION:=1.6.3
-PKG_RELEASE:=1
+PKG_RELEASE:=3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=https://github.com/t6x/reaver-wps-fork-t6x.git
