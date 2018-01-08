@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=reaver-wps-fork-t6x
 PKG_REV:=1fbdf8d76ee4e5fe2c39e1a3eb2f3b46b1de968b
-PKG_VERSION:=1.6.3
+PKG_VERSION:=1.6.3-static
 PKG_RELEASE:=3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
@@ -46,7 +46,7 @@ CONFIGURE_PATH:=src
 
 MAKE_PATH:=src
 
-TARGET_CFLAGS+=$(TARGET_CPPFLAGS)
+TARGET_CFLAGS+=$(TARGET_CPPFLAGS) -static
 
 define Package/reaver/install
 	$(INSTALL_DIR) $(1)/usr/bin
