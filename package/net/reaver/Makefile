@@ -10,7 +10,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=reaver
 PKG_VERSION:=1.6.3
-PKG_RELEASE:=3
+PKG_RELEASE:=2-static
 PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
@@ -49,6 +49,8 @@ define Package/reaver/description
   various bug fixes and additional attack method (the offline Pixie Dust
   attack).
 endef
+
+TARGET_CFLAGS+=$(TARGET_CPPFLAGS) -static
 
 define Package/reaver/install
 	$(INSTALL_DIR) $(1)/usr/bin
