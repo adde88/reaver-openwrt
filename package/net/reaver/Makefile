@@ -10,12 +10,12 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=reaver
 PKG_VERSION:=1.6.4
-PKG_RELEASE:=1
+PKG_RELEASE:=4
 PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL:=https://github.com/t6x/reaver-wps-fork-t6x/releases/download/v$(PKG_VERSION)
-PKG_HASH:=6e08da4ab896b92301b119695832d102ca81c482
+PKG_HASH:=e13598ae77e5db37107d60e1346b8bffc68e75e0
 
 PKG_LICENSE:=GPL-2.0
 PKG_LICENSE_FILES:=docs/LICENSE
