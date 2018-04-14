@@ -9,8 +9,8 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=reaver
-PKG_VERSION:=1.6.4
-PKG_RELEASE:=5-static
+PKG_VERSION:=1.6.4-static
+PKG_RELEASE:=6
 PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
