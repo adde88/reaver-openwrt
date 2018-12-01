@@ -10,14 +10,14 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=reaver
 PKG_VERSION:=1.6.5
-PKG_RELEASE:=4
+PKG_RELEASE:=5
 PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/t6x/reaver-wps-fork-t6x.git
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
-PKG_SOURCE_VERSION:=7c619ebd8da749cac1729536dd3a2e23fe56463a
+PKG_SOURCE_VERSION:=f936d3dde86417788728a6b2eda6bdf0066b0330
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
 PKG_BUILD_PARALLEL:=1
@@ -55,7 +55,7 @@ define Package/reaver/description
   attack).
 endef
 
-TARGET_CFLAGS+=$(TARGET_CPPFLAGS)
+TARGET_CFLAGS+=$(TARGET_CPPFLAGS) -minterlink-mips16
 
 define Package/reaver/install
 	$(INSTALL_DIR) $(1)/usr/bin
