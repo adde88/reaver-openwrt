@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2012-2015 OpenWrt.org
 # Copyright (C) 2017 Yousong Zhou
+# Copyright (C) 2019 Andreas Nilsen
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -10,14 +11,14 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=reaver
 PKG_VERSION:=1.6.5
-PKG_RELEASE:=5
+PKG_RELEASE:=8
 PKG_MAINTAINER:=Andreas Nilsen <adde88@gmail.com>
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/t6x/reaver-wps-fork-t6x.git
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
-PKG_SOURCE_VERSION:=f936d3dde86417788728a6b2eda6bdf0066b0330
+PKG_SOURCE_VERSION:=48a0a8bedcd0754199eb56f1ed1fc722d7140cc7
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
 PKG_BUILD_PARALLEL:=1
