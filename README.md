@@ -1,6 +1,5 @@
-# Reaver 1.6.5 - OpenWRT
+# Reaver 1.6.5 - OpenWRT (ar71xx) 
 
-OpenWRT-SDK Makefile of the newest Reaver v1.6.5, plus the IPK to install it to your device.  
-This is the latest update of Reaver for OpenWRT since 2015.  
+OpenWRT-SDK Makefile of the latest Reaver v1.6.5, plus the IPK to install it to your (ar71xx) device.  
 
--Zylla
+-Andreas Nilsen
